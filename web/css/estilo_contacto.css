@@ -1,0 +1,147 @@
+body{
+    background-color: #009999;
+}
+li:not(.enlace_contacto) {
+    background-color: #009999;
+    color: black;
+}
+li:hover:not(.enlace_contacto) {
+    background: rgba(0,0,0,0.3);
+    color: black;
+}
+.enlace_contacto  {
+    background: rgba(0,0,0,0.3);
+    color:black;
+}
+
+.contenido {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: auto;
+    padding: 0 5% 0 5%;
+    box-sizing: border-box;
+    display: inline-flex;
+    padding-bottom: 50px;
+}
+hr {
+    border-color: dimgray;
+    border-style: double;
+    border-width: 0.1em;
+}
+.principal{
+    display: inline-block;
+    background-color: white;
+    padding: 3.5em;
+    box-shadow: 0em 0em 1.5em 0.1em grey;
+    border: solid 3px black;
+    width: 70%;
+    box-sizing: border-box;
+    border-radius:15px;
+    margin-top:50px;
+}
+
+#mapa {
+    width: 100%;
+    height: 250px;
+    border: 0;
+    border-radius:15px;
+}
+
+.seccion_contacto {
+    width: 100%;
+}
+table {
+    width: 100%;
+    text-align: center;  
+}
+td{
+    padding: 0.5em;
+}
+.btn_enviar {
+    width: 100%;
+    background-color: black;
+    border: 2px solid black;
+    text-align: center;
+    padding: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: white;
+}
+.btn_enviar:hover {
+    background-color: lightslategrey;
+    color: white;
+}
+input:focus{
+    border: 3px solid #555;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+input[type="email"] {
+    width: 100%;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+textarea:focus {
+    border: 3px solid #555;
+}
+
+.seccion_mapa {
+    width: 100%;
+}
+
+.lateral {
+    display: inline-block;
+    background-color: white;
+    margin-top:50px;
+    margin-bottom: 0;
+    padding: 3.5em;
+    box-shadow: 0em 0em 0.5em 0.1em grey;
+    border: solid 3px black; 
+    width: 25%;
+    box-sizing: border-box;
+    margin-left: 3%;
+    border-radius:15px;
+}
+.seccion_horario {
+    width: 100%;
+    padding-bottom: 5em;
+}
+.seccion_tel_rrss {
+    width: 100%;
+}
+#rrss {
+    float: right;
+    position:relative;
+    right:20px;
+}
+
+
+@media (max-width:1220px) {
+    .contenido{
+        display: inline-block;
+    }
+    .principal {
+        width:100%;
+        height:auto;
+        margin-bottom: 60px;
+    }
+    
+    .lateral {
+        margin: 0;
+        width:100%;
+        height:auto;
+        margin-bottom: 60px;
+    }
+}

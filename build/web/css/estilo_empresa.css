@@ -1,0 +1,197 @@
+
+body{
+    
+    background-color: #009999;
+}
+
+li:not(.enlace_empresa) {
+    
+    background-color: #009999;
+    color: black;
+}
+
+li:hover:not(.enlace_empresa) {
+    
+    background: rgba(0,0,0,0.3);
+    color: black;
+}
+
+.enlace_empresa  {
+    
+    background: rgba(0,0,0,0.3);
+    color:black;
+}
+
+.contenido {
+    
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: auto;
+    padding: 0 5% 0 5%;
+    box-sizing: border-box;
+    display: inline-flex;
+}
+
+.div_nosotros_historia {
+    
+    float:left;
+    width:50%;
+    margin-bottom:30px;
+}
+
+.div_nosotros {
+    
+    background-color:white;
+    border-style:solid;
+    box-shadow:5px 5px 15px #666;
+    position:relative;
+    bottom:30px;
+    margin-top:50px;
+    border-radius:15px;
+}
+
+.div_historia {
+    
+    background-color: white;
+    border-style: solid;
+    box-shadow: 5px 5px 15px #666;
+    border-radius:15px;
+}
+
+.div_conocenos {
+    
+    width: 40%;
+    float: left;
+    background-color: white;
+    border-style: solid;
+    box-shadow: 5px 5px 15px #666;
+    position: relative;
+    left: 50px;
+    height: 100%;
+    border-radius:15px;
+    margin-top:20px;
+}
+
+.divPerfil {
+    
+    margin:10px;
+    text-align:center;
+    border-style:solid;
+    box-shadow:5px 5px 15px #666;
+    padding-top: 10px;
+    padding-bottom:10px;
+    margin-left:50px;
+    margin-right:50px;
+    background:rgba(22,165,167,0.3);
+    margin-bottom:40px;
+    border-radius:15px;
+}
+
+h2 {
+    
+    margin-left:20px;
+    margin-bottom:30px;
+}
+
+.seccion_nosotros {
+    
+    text-align:justify;
+    padding: 0px 20px 0px 20px;
+}
+
+.seccion_historia {
+    
+    text-align:justify;
+    padding: 0px 20px 0px 20px;
+}
+
+.logoGrande {
+    
+    width:100px;
+    height:100px;
+    padding:0px 20px 20px 20px;
+    float:top;
+    position:relative;
+    bottom:20px;
+}
+
+.logoHistoria {
+    
+    width:100px;
+    height:100px;
+    padding:0px 20px 20px 20px;
+    float:top;
+    position:relative;
+    bottom:20px;
+}
+
+.logoPerfil {
+    
+    width:200px;
+    height:200px;
+}
+
+@media (max-width:1220px) {
+    
+    .div_nosotros_historia {
+        
+        width:100%;
+        height:auto;
+        margin-top:10%;
+    }
+    
+    .div_nosotros {
+        
+        margin-top:5%;
+    }
+    
+    .div_historia {
+        
+        margin-bottom:5%;
+    } 
+    
+    .div_conocenos {
+        
+        width:85%;
+        height:auto;
+        position:relative;
+        right:40px;
+        margin-left:auto;
+        margin-right: auto;
+        text-align:center;
+        margin-bottom: 40px;
+    }
+    
+    .contenido {
+        
+        display:contents;
+    }
+}
+
+@media (max-width:680px) {
+    
+    .div_conocenos {
+        width: min-content;
+        margin: 0 auto;
+    }
+    .div_nosotros_historia {
+        
+        margin-top:30%;
+    }
+    
+    .logoGrande {
+        
+        display:contents;
+    }
+    
+    .logoHistoria {
+        
+        display:contents;
+    }
+    
+    .divPerfil {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

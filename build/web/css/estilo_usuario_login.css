@@ -1,0 +1,117 @@
+/*ESTILOS COMPARTIDOS*/
+body{
+    background-color: #009999;
+}
+li:not(.enlace_usuario) {
+    background-color: #009999;
+    color: black;
+}
+
+li:hover:not(.enlace_usuario) {
+    background: rgba(0,0,0,0.3);
+    color: black;
+}
+
+.enlace_usuario  {
+    background: rgba(0,0,0,0.3);
+    color:black;
+}
+
+/*ESTILO LOGIN "usuario.jsp"*/
+.contenido_login {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: auto;
+    padding: 1.5% 5% 0 5%;
+    box-sizing: border-box;
+    display: inline-flex;
+}
+
+.principal_login {
+    display: block;
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 50px;
+    margin: auto;
+    padding: 2em 3.5em ;
+    box-shadow: 0em 0em 1.5em 0.1em grey;
+    border: solid 3px black;
+    width: 40%;
+    box-sizing: border-box;
+    border-radius:15px;
+}
+
+.titulo_login{
+    text-align: center;
+}
+
+.input_login[type=text], .input_login[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.input_login:focus{
+    border: 3px solid #555;
+}
+
+.btn_iniciar_login, .btn_registrar_login {
+    width: 100%;
+    margin-top: 1.8em;
+    background-color: black;
+    border: 2px solid black;
+    text-align: center;
+    padding: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: white;
+    margin-bottom: 1.5em;
+}
+
+.btn_iniciar_login:hover, .btn_registrar_login:hover {
+    background-color: lightslategrey;
+    color: white;
+}
+
+.imgcontainer_login {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.avatar_login {
+    width: 40%;
+    border-radius: 40% 30% 40% 50%;
+}
+
+.wrapper_login {
+    padding: 0px;
+}
+
+
+
+@media (max-width:1500px) {
+    .contenido_login{
+        display: inline-block;
+    }
+    .principal_login {
+        width:80%;
+        height:auto;
+        margin-top:80px;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:800px) {
+    .contenido_login{
+        display: inline-block;
+    }
+    .principal_login {
+        width:100%;
+        height:auto;
+        margin-top:80px;
+        margin-bottom: 50px;
+    }
+}

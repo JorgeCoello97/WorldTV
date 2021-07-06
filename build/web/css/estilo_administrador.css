@@ -1,0 +1,314 @@
+
+/*ESTILOS EN COMUN*/
+body{
+    background-color: #009999;
+}
+
+li:not(.enlace_admin) {
+    background-color: #009999;
+    color: black;
+}
+
+li:hover:not(.enlace_admin) {
+    background: rgba(0,0,0,0.3);
+    color: black;
+}
+
+.enlace_admin {
+    background: rgba(0,0,0,0.3);
+    color:black;
+}
+
+h2{
+    text-align: center;
+}
+
+
+
+/*ESTILOS ADMINISTRADOR LOGIN*/
+.contenido_login {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: auto;
+    padding: 1.5% 5% 0 5%;
+    box-sizing: border-box;
+    display: inline-flex;
+}
+
+.principal_login {
+    display: block;
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: auto;
+    padding: 2em 3.5em ;
+    box-shadow: 0em 0em 1.5em 0.1em grey;
+    border: solid 3px black;
+    width: 40%;
+    box-sizing: border-box;
+    border-radius:15px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input:focus{
+    border: 3px solid #555;
+}
+.btn_enviar_login {
+    width: 100%;
+    margin-top: 1.8em;
+    background-color: black;
+    border: 2px solid black;
+    text-align: center;
+    padding: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: white;
+    margin-bottom: 1.5em;
+}
+
+.btn_enviar_login:hover {
+    background-color: lightslategrey;
+    color: white;
+}
+
+.imgcontainer_login {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar_login {
+    width: 40%;
+    border-radius: 40% 30% 40% 50%;
+}
+
+.wrapper_login {
+    padding: 16px;
+}
+
+@media (max-width:1500px) {
+    .contenido_login{
+        display: inline-block;
+    }
+    .principal_login {
+        width:80%;
+        height:auto;
+        margin-top:80px;
+    }
+}
+@media (max-width:800px) {
+    .contenido_login{
+        display: inline-block;
+    }
+    .principal_login {
+        width:100%;
+        height:auto;
+        margin-top:80px;
+    }
+}
+
+
+
+/*ESTILOS ADMINISTRADOR INICIO*/
+
+.contenido_inicio {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: auto;
+    padding: 2.5% 5% 0 5%;
+    box-sizing: border-box;
+    display: block;
+}
+
+
+.div_modificar_productos_inicio {
+    
+    background-color:white;
+    border-style:solid;
+    box-shadow:5px 5px 15px #666;
+    border-radius:15px;
+    padding:30px;
+    width: 95%;
+    margin-bottom:50px;
+}
+
+.productos_inicio {
+    
+    display:inline-block;
+    width:auto;
+}
+
+.producto_inicio {
+    
+    padding:15px;
+    float:left;
+    margin:0px auto;
+}
+
+.producto_inicio table {
+    
+    border:black 2px solid;
+    border-radius:5px;
+    width:280px;
+    height:auto;
+    background-color:#c0b28e;
+}
+
+.fila_botones_inicio {
+    
+    text-align:center;
+}
+
+.nombres_negrita_inicio {
+    
+    font-weight:bold;
+}
+
+.boton_inicio {
+
+    background-color: black;
+    border: 2px solid black;
+    text-align: center;
+    padding:5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: white;
+    outline:none;
+    border:none;
+    border-radius:5px;
+}
+
+.boton_inicio:focus {
+    
+    border: 3px solid #555;
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.usuario_registrado_inicio {
+    
+    padding:10px;
+}
+
+.usuario_registrado_inicio table {
+    
+    border:black 2px solid;
+    border-radius:5px;
+    width:100%;
+    height:auto;
+    background-color:#76ddd8;
+}
+
+.div_ver_usuarios_y_pedidos_inicio {
+    
+    display:inline-flex;
+    width: 100%;
+    margin-bottom:50px;
+}
+
+.div_ver_usuarios_inicio {
+    
+    background-color:white;
+    border-style:solid;
+    box-shadow:5px 5px 15px #666;
+    border-radius:15px;
+    padding:30px;
+    width:30%;
+    margin-right:25px;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.usuario_registrado_inicio {
+    
+    padding:10px;
+}
+
+.usuario_registrado_inicio table {
+    
+    border:black 2px solid;
+    border-radius:5px;
+    width:100%;
+    height:auto;
+    background-color:#76ddd8;
+}
+
+.div_ver_pedidos_inicio {
+    
+    background-color:white;
+    border-style:solid;
+    box-shadow:5px 5px 15px #666;
+    border-radius:15px;
+    padding:30px;
+    width:70%;
+    margin-left:25px;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.pedido_realizado_inicio {
+    
+    padding:10px;
+    margin-top: 10px;
+}
+
+.pedido_realizado_inicio table {
+    
+    border:black 2px solid;
+    border-radius:5px;
+    width:100%;
+    height:auto;
+    background-color:#76ddd8;
+}
+h2 {
+    text-align: center;
+}
+@media (max-width:1220px) {
+    
+    .div_modificar_productos_inicio {
+        
+        margin-top:80px;
+    }
+}
+
+@media (max-width:839px) {
+    
+    .div_modificar_productos_inicio {
+        
+        width:100%;
+        position:relative;
+        left:-27px;
+    }
+    
+    .div_ver_usuarios_y_pedidos_inicio {
+        
+        display:block;
+    }
+    
+    .div_ver_usuarios_inicio {
+        
+        width:100%;
+        margin-bottom:50px;
+        position:relative;
+        left:-30px;
+    }
+    
+    .div_ver_pedidos_inicio {
+        
+        width:100%;
+        position:relative;
+        left:-55px;
+    }
+}

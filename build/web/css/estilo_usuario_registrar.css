@@ -1,0 +1,103 @@
+/*ESTILOS COMPARTIDOS*/
+body{
+    background-color: #009999;
+}
+li:not(.enlace_usuario) {
+    background-color: #009999;
+    color: black;
+}
+
+li:hover:not(.enlace_usuario) {
+    background: rgba(0,0,0,0.3);
+    color: black;
+}
+
+.enlace_usuario  {
+    background: rgba(0,0,0,0.3);
+    color:black;
+}
+
+/*ESTILO REGISTRAR*/
+.contenido_registrar {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: auto;
+    padding: 1.5% 5% 0 5%;
+    box-sizing: border-box;
+    display: inline-flex;
+}
+
+.principal_registrar {
+    display: inline-table;
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: auto;
+    padding: 2em 3.5em ;
+    box-shadow: 0em 0em 1.5em 0.1em grey;
+    border: solid 3px black;
+    width: 40%;
+    box-sizing: border-box;
+    border-radius:15px;
+}
+
+.btn_registrar , .btn_volver{
+    width: 100%;
+    background-color: black;
+    border: 2px solid black;
+    text-align: center;
+    padding: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: white;
+}
+
+.btn_registrar:hover , .btn_volver:hover{
+    background-color: lightslategrey;
+    color: white;
+}
+.tabla_registrar {
+    display: grid;
+    background-color: white;
+    width: fit-content;
+    margin: 0 auto;
+}
+.tabla_registrar td{
+    padding: 0.5em;
+}
+
+.input_registrar:not([type=button]){
+    padding: 1em;
+    width: -webkit-fill-available;
+}
+
+.titulo_registrar {
+    text-align: center;
+}
+
+.separador_botones_registrar {
+    margin: 1.5em 0;
+}
+
+.btn_registrar {
+    margin-top: 5em;
+}
+
+.btn_volver {
+    margin-bottom: 1.5em;
+}
+
+@media (max-width:1220px) {
+    .principal_registrar {
+        height:auto;
+        margin-top:80px;
+        text-align: center;
+    }
+    .tabla_registrar tr:not(.fila_vacia) {
+        display: grid;
+    }
+    .fila_vacia {
+        display: none;
+    }
+}

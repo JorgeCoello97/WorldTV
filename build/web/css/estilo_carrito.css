@@ -1,0 +1,223 @@
+/*ESTILOS COMPARTIDOS*/
+body{
+    background-color: #009999;
+}
+
+li:not(.enlace_tienda) {
+    background-color: #009999;
+    color: black;
+}
+
+li:hover:not(.enlace_tienda) {
+    background: rgba(0,0,0,0.3);
+    color: black;
+}
+
+.enlace_tienda  {
+    background: rgba(0,0,0,0.3);
+    color:black;
+}
+
+/*ESTILO CARRITO DENTRO*/
+.separador_carrito {
+    border-color: dimgray;
+    border-style: double;
+    border-width: 0.1em;
+    margin: 1.5em 0;
+}
+
+h2.titulo_carrito {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contenido_carrito {
+    display: flex;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding: 2.5% 5% 0 5%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.principal_carrito {
+    display: block;
+    background-color: white;
+    padding: 3.5em;
+    box-shadow: 0em 0em 1.5em 0.1em grey;
+    border: solid 3px black;
+    width: 55%;
+    height: fit-content;
+    box-sizing: border-box;
+    margin-right: 5%;
+    overflow: auto;
+    border-radius:15px;
+}
+
+.productos_carrito {
+    
+    overflow-y: scroll;
+    height:550px;
+}
+
+.producto {
+    display: flex;
+    padding: 1.25em;
+    box-shadow: 0em 0em 0.1em 0.1em grey;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    transition: ease-in-out 0.4s;
+}
+
+.img_producto {
+    border: solid 1px grey;
+    width: 64px;
+    height: 64px;
+    padding: 20px 10px;
+    margin: auto;
+}
+
+.informacion {
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.opciones {
+    margin: auto;
+}
+
+.opciones.img {
+    display: block;
+}
+
+.resumen_carrito {
+    display: block;
+    height: fit-content;
+    background-color: white;
+    padding: 3.5em;
+    box-shadow: 0em 0em 1.5em 0.1em grey;
+    border: solid 3px black;
+    box-sizing: border-box;
+    margin: auto 0;
+    border-radius: 15px;
+    margin-top: 100px;
+}
+
+.btn_comprar_carrito {
+    display: block;
+    width: 100%;
+    margin-top: 4em;
+    background-color: black;
+    border: 2px solid black;
+    text-align: center;
+    padding: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: white;
+}
+
+.btn_comprar_carrito:hover {
+    background-color: lightslategrey;
+    color: white;
+}
+
+.total_carrito {
+    padding-top: 1em;
+    text-align: center;
+    font-size: x-large;
+}
+
+.img_confirmar_producto {
+    display: block;
+}
+
+.img_confirmar_producto:hover {
+    filter: contrast(4);
+    cursor: pointer;
+}
+
+.img_editar_producto {
+    display: block;
+}
+
+.img_editar_producto:hover {
+    filter: contrast(4);
+    cursor: pointer;
+}
+
+.img_cerrar_producto {
+    display: block;
+    margin-bottom: 1.5em;
+}
+
+.img_cerrar_producto:hover {
+    filter: contrast(4);
+    cursor: pointer;
+}
+
+.div_cerrar_sesion {
+    margin-top: 100px;
+}
+
+.img_logout {
+    display: block;
+    background-color: black;
+    padding: 1.4em;
+    border-radius:40%;
+    border: 4px solid white;
+    width: 50px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.img_logout:hover {
+    background-color: lightslategrey; 
+}
+
+@media (max-width:1220px) {
+    .contenido_carrito{
+        display: inline-block;
+    }
+    .principal_carrito {
+        display: inline-block;
+        width:100%;
+        height:auto;
+        margin-top:80px;
+    }
+    .resumen_carrito {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+    .img_producto{
+        width: 128px;
+        height: 128px;
+        margin: auto;
+    }
+    .opciones {
+        display: block;
+    }
+    .img_cerrar_producto {
+        float: left;
+        margin-right: 2em;
+    }
+    .producto {
+        display: grid;
+        padding: 1.25em;
+        box-shadow: 0em 0em 0.1em 0.1em grey;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+        transition: ease-in-out 0.4s;
+    }
+    
+    .div_cerrar_sesion {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}

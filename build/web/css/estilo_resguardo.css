@@ -1,0 +1,267 @@
+/*ESTILOS COMPARTIDOS*/
+body{
+    background-color: #009999;
+}
+
+li:not(.enlace_tienda) {
+    background-color: #009999;
+    color: black;
+}
+
+li:hover:not(.enlace_tienda) {
+    background: rgba(0,0,0,0.3);
+    color: black;
+}
+
+.enlace_tienda  {
+    background: rgba(0,0,0,0.3);
+    color:black;
+}
+
+/*ESTILOS RESGUARDO JSP*/
+.principal {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: fit-content;
+    padding-top: 5%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.div_datos_y_productos {
+    
+    display: flex;
+}
+
+.div_finalizar_compra {
+    margin-top: 2em;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div_datos {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 15px;
+    display: flex;
+    width: fit-content;
+    padding: 2.5% 5%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.div_productos {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: fit-content;
+    display: block;
+    padding: 2.5%;
+    box-sizing: border-box;
+    justify-content: center;
+    margin-left: 1.5em;
+}
+.productos_carrito {
+    overflow-y: scroll;
+    height: 300px;
+    padding: 1.5em;
+}
+
+.total_carrito {
+    text-align: center;
+    font-size: x-large;
+    margin: 30px 0px 0px 0px;
+}
+
+.informacion_producto {
+    width:fit-content;
+}
+
+.tabla_info_producto {
+
+    margin-top:30px;
+}
+
+.imagen_producto {
+
+    width:128px;
+    height:128px;
+}
+
+.atributo {
+
+    font-weight:bold;
+}
+
+.tabla_info_producto tr {
+
+    text-align:left;
+}
+
+.producto_carrito {
+    padding:20px;
+    border:1px solid black;
+    display: flex;
+    width:auto;
+    margin: 0 auto 20px auto;
+}
+
+.datos_cuenta {
+    margin-right: 2.5em;
+    padding: 1.5em;
+    border: 1px black;
+    border-style: double;
+}
+
+.datos_facturacion {
+    padding: 1.5em;
+    border: 1px double black;
+}
+
+.btn_modificar_envio {
+    width: 100%;
+    background-color: black;
+    border: 2px solid black;
+    text-align: center;
+    padding: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: white;
+    margin-top:1.5em;
+}
+.btn_modificar_facturacion {
+    width: 100%;
+    background-color: black;
+    border: 2px solid black;
+    text-align: center;
+    padding: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: white;
+    margin-top: 17.7em;
+}
+
+.btn_modificar_envio:hover, .btn_modificar_facturacion:hover {
+    background-color: lightslategrey;
+    color: white;
+}
+
+.tabla_cuenta {
+    padding: 0.5em;
+    width: 100%;
+}
+
+.input_resguardo:not([type=button]){
+    padding: 1em;
+    width: -webkit-fill-available;
+}
+
+.titulos {
+    text-align: center;
+}
+
+.btn_finalizar_compra {
+    width: 100%;
+    background-color: black;
+    border: 2px solid black;
+    text-align: center;
+    padding: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: white;
+    margin-top:10px;
+}
+
+.btn_finalizar_compra:hover {
+    background-color: lightslategrey;
+    color: white;
+}
+
+.btn_volver {
+    width: 100%;
+    background-color: black;
+    border: 2px solid black;
+    text-align: center;
+    padding: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    color: white;
+    margin-top:10px;
+}
+
+.btn_volver:hover {
+    background-color: lightslategrey;
+    color: white;
+}
+
+.metodo_pago {
+    
+    font-weight: bold;
+}
+
+.tarjetaVisible {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.tarjetaVisible table{
+    margin: 0 auto;
+}
+
+.tarjetaVisible input{
+    width: 100%;
+}
+
+.tarjetaVisible:focus {
+    border: 3px solid #555;
+}
+
+.tarjetaInvisible {
+    display:none;
+}
+
+@media (max-width:1360px) {
+    
+    .div_datos_y_productos {
+        display: block;
+        margin-bottom: 50px;
+        margin-top: 15%;
+    }
+    
+    .div_productos {
+        margin-left: 0px;
+        margin-top: 50px;
+        width: auto;
+    }
+    
+    .btn_finalizar_compra {
+        
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:890px) {
+    
+    .div_datos {
+        display: inline-grid;
+    }
+    
+    .datos_cuenta {
+        margin-right: 0;
+    }
+    
+    .btn_modificar_facturacion {
+        
+        margin-top: 10px;
+    }
+    
+    .datos_facturacion {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+    
+}

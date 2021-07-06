@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>CONTACTO</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/estilo_contacto.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="contenido">
+            <div class="principal">
+                <section class="seccion_contacto">
+                    <h2>Contacta con nosotros</h2>
+                    <hr>
+                    <form>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text" id="nombre" name="nombre" placeholder="Nombre:"/>
+                                    <br><br>
+                                    <input type="text" id="correo" name="correo" placeholder="E-mail:"/>
+                                </td>
+                                <td>
+                                    <textarea placeholder="Mensaje:" maxlength="255"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="submit" class="btn_enviar" value="Enviar Mensaje"/>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </form>
+                </section>
+                <section class="seccion_mapa">
+                    <h2>Localización</h2>
+                    <hr>
+                    <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6216.607644641293!2d0.016376926293112888!3d38.8255022183272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129e1d35d413e9e1%3A0xa9268bf972743b71!2s03760%20Ondara%2C%20Alicante!5e0!3m2!1ses!2ses!4v1581960731492!5m2!1ses!2ses"></iframe>
+                </section>
+            </div>
+            <aside class="lateral">
+                <section class="seccion_horario">
+                    <h2>Horario</h2>
+                    <hr>
+                    <table class="tabla_horario">
+                        <tr><th>DIA</th><th>HORA</th></tr>
+                        <tr><td>Lunes a Viernes</td><td>09:00-14:00</td></tr>
+                        <tr><td>Sabado y Domingo</td><td>09:00-12:00</td></tr>
+                    </table>
+                </section>
+                <section class="seccion_tel_rrss">
+                    <h2>Otros</h2>
+                    <hr>
+                    <p>Teléfono: 606 505 059</p>
+                    <img id="rrss" src="img/rrss.png" usemap="#image-map" alt="Redes sociales">
+
+                    <map name="image-map">
+                        <area target="_blank" alt="Facebook" title="Facebook" href="https://www.facebook.com/" coords="17,47,15" shape="circle">
+                        <area target="_blank" alt="Instagram" title="Instagram" href="https://www.instagram.com/" coords="51,46,15" shape="circle">
+                        <area target="_blank" alt="Twitter" title="Twitter" href="https://twitter.com/" coords="85,47,16" shape="circle">
+                        <area target="_blank" alt="Linkedin" title="Linkedin" href="https://www.linkedin.com/" coords="119,47,13" shape="circle">
+                    </map>
+                </section>
+            </aside>
+        </div>
+    </body>
+</html>

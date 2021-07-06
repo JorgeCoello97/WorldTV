@@ -1,0 +1,372 @@
+html {
+    background-color: #009999 !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body { /*cuerpo de la página web*/
+    background-color: #009999;
+    margin:0px;
+    font-family:sans-serif;
+}
+
+header {
+    width:100%; /*el header ocupará el 100% de su contenedor, sin márgenes*/
+    background-color:#009999;
+}
+
+nav { 
+    background-color: #009999;
+    width:100%;
+    position:fixed;
+    z-index: 2;
+    box-shadow: 0em 0em 0.5em 0em black;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin: 10px 15px 10px 15px;
+    float: left;
+}
+ul {
+    display: flex;
+    list-style:none;
+    padding:0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: fit-content;
+    width: -moz-fit-content;
+    
+}
+li {
+    float: left;
+    list-style: none;
+    padding: 20px;
+}
+li:hover {
+    cursor: pointer;
+    color: white;
+    background: rgba(0,0,0,0.3);
+    font-weight: bolder;
+}
+
+li a{
+    text-decoration: none;
+    padding-right: 30px;
+    padding-left: 30px;
+    position: relative;
+    color: black;
+    font-size: large;
+}
+
+.enlace_inicio {
+    background: rgba(0,0,0,0.3);
+    color: white;
+}
+
+#btn_menu { /*label con la imagen del menu sandwich*/    
+    display:none;
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+.imagen_menu { /*label donde está metida el sanwich*/
+    display:none;
+    position:relative;
+}
+
+.sandwich { /*imagen del menu sandwich*/
+    width:30px;
+    height:30px;
+    padding:15px 15px 15px 15px;
+}
+
+.sandwich:hover { /*cuando pasamos el raton por encima del sandwich...*/
+    cursor:pointer; /*Cuando pasemos el raton por encima de la imagen del menu, el cursor será una mano*/
+    background: rgba(0,0,0,0.3); /*le damos opacidad al fondo de la imagen, así hace efecto botón*/
+}
+#cuerpo {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 5%;
+    height:auto;
+    margin:0 auto;
+}
+
+@media (max-width:1220px) {
+    
+    
+    header {
+        
+        position:fixed;
+        z-index:2;
+    }
+    
+    .imagen_menu {
+        display:block; /*Aparece el label del sandwich*/
+        height:100%;
+        z-index: 2;
+        box-shadow: 0em 0em 0.5em 0em black;
+        margin: 0;
+    }
+    
+    nav {
+        position: absolute;
+        background-color: #009999;
+        width: 250px;
+        margin-left:-768px; /*Cuando aparezca el sandwich, el nav se ponga 768px a la izquierda, no se ve*/
+        transition: all 0.5s;
+    }
+    
+    ul {
+        
+        flex-direction:column;
+        border-top:2px #006666 double;
+        margin-bottom: 1.5em;
+    }
+    li {
+        text-align: center;
+    }
+    .logo {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        padding-bottom: 1.5em;
+        padding-top: 1.5em;
+        transition: ease-in-out 0.4s;
+    }
+    .logo:hover {
+        width: 45px;
+        height: 45px;
+        filter: contrast(1.6);
+    }
+    #btn_menu:checked ~ nav { /*Cuando el boton esta checkeado, busca el nav y...*/
+        
+        margin-left:0px; /*Se pone el nav a margen 0, aparece el nav*/
+    }
+}
+
+.cabecera {
+    
+    margin:30px;
+    width:96%;
+    margin-bottom:6%;
+}
+
+.divTituloCabecera {
+    
+    width:32%;
+    display:inline-block;
+    font-size:30px;
+    text-align:center;
+}
+
+.divLogoCabecera {
+    
+    width:32%;
+    display:inline-block;
+    text-align:center;  
+}
+
+.logoCabecera {
+    
+    width:30%;
+    height:30%;
+}
+
+.divContactoCabecera {
+    
+    width:32%;
+    display:inline-block;
+}
+
+
+.noticias {
+    
+    margin-left:10%;
+    margin-right:10%;
+    background-color:#009999;
+    border-style: solid;
+    box-shadow: 5px 5px 15px black;
+    position:relative;
+    right:1%;
+    margin-bottom:8%;
+    border-radius:15px;
+}
+
+.div_inferior {
+    
+    margin:5%;
+}
+
+.div_descripcion {
+    
+    margin-left:4%;
+    margin-right:6%;
+    background-color:white;
+    border-style: solid;
+    box-shadow: 5px 5px 15px black;
+    padding:1%;
+    margin-bottom:8%;
+    border-radius:15px;
+}
+
+.seccion_descripcion {
+    
+    margin:3%;
+    text-align:justify;
+}
+
+#sobre_nosotros {
+    
+    margin-left:3%;
+    margin-top:3%;
+}
+
+.div_rrss {
+    
+    margin-top:5%;
+    margin-left:4%;
+    margin-right:6%;
+    background-color:white;
+    border-style: solid;
+    box-shadow: 5px 5px 15px black;
+    margin-bottom:10%;
+    padding-right:2%;
+    border-radius:15px;
+}
+
+#redes_sociales {
+    
+    margin:3%;
+}
+
+.div_rrss div {
+    
+    display:inline-block;
+    width:23%;
+    text-align: center;
+}
+
+.imagenesDescripcion {
+    
+    display:inline-block;
+    width:20%;
+    height:20%;
+}
+
+/* ESTILOS CSS PARA SLIDER */
+
+.imagenesNoticias {
+    
+    width:500px;
+    height:500px;
+    float:left;
+    border-radius:10px;
+}
+
+#slider {
+    
+    overflow:hidden;
+}
+
+#slider figure {
+    
+    position:relative;
+    width:500%;
+    margin:0;
+    left:0;
+    animation:16s slider infinite;
+}
+
+#slider figure img {
+    
+    width:20%;
+    float:left;
+}
+
+
+@keyframes slider {
+    
+    0% {
+        left:0;
+    }
+    20% {
+        left:0;
+    }
+    25% {
+        left:-100%;
+    }
+    45% {
+        left:-100%;
+    }
+    50% {
+        left:-200%;
+    }
+    70% {
+        left:-200%;
+    }
+    75% {
+        left:-300%;
+    }
+    95% {
+        left:-300%;
+    }
+    100% {
+        left:-400%;
+    }
+}
+
+
+@media (max-width:1100px) {
+    
+    .cabecera {
+
+        display:contents;
+    }
+    
+    .divTituloCabecera {
+        
+        display:block;
+        position:relative;
+        left:32%;
+        font-size:110%;
+        margin-top:50px;
+    }
+    
+    .divLogoCabecera {
+        
+        display:block;
+        position:relative;
+        left:28%;
+        margin-bottom:10%;
+        width:40%;
+        height:40%;
+    }
+    
+    .divContactoCabecera {
+        
+        display:none;
+    }
+    
+    .noticias {
+        
+        height:230px;
+    }
+    
+    #slider {
+        
+        height:230px;
+    }
+    
+    #slider figure img {
+    
+        width:20%;
+        float:left;
+        height:230px;
+    }
+}
